@@ -8,7 +8,6 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
 分布式事务框架将会执行A->B,B->C,C->D 的各个participant(分布式服务调用)的回滚服务进行事务补偿。同时，在分布式事务的整个执行过程中，用WAL(Write ahead log)机制,将分
 布式服务执行的commit和rollback之前保留重要执行信息。
 
-这个分布式框架目前只是一个初级的版本，后续会继续迭代。框架中有很多地方需要改进和优化，如果有宝贵的改进和优化建议，请把建议发送到 我的邮箱 : yubingopensource@163.com
 		 
 <h1>distributed-flexible-transaction分布式事务基本组成模块</h1>
 
@@ -26,7 +25,7 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
 
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 * 改注解表示 分布式事务的具体执行方法是否需要回滚，以及回滚的具体方法
 	 */
 
@@ -39,7 +38,7 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
 
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 
 	 * 事务的状态
 	 *
@@ -63,7 +62,7 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
 	
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 *
 	 *各个参与者participant的执行状态
 	 */
@@ -86,7 +85,7 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
 	
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 *
 	 * 各个参与者participant的commit 和 rollback调用实体
 	 */
@@ -111,7 +110,7 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
 	
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 * 分布式事务的参与者实体(participant)的核心结构
 	 *
 	 */
@@ -146,7 +145,7 @@ A->B,B->C,C->D,D->E,E->F,在distributed-flexible-transaction分布式事务框�
  
 	 /**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 * transaction核心载体
 	 *
 	 */
@@ -180,7 +179,7 @@ distributed-transaction-agent 本质上是一个dubbo的filter,利用dubbo的spi
 
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 * dubbo filter
 	 *
 	 */
@@ -211,7 +210,7 @@ distributed-transaction-agent 本质上是一个dubbo的filter,利用dubbo的spi
  
 	 /**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 *
 	 */
 	public interface IWriteAheadLogger<T> {
@@ -228,7 +227,7 @@ distributed-transaction-agent 本质上是一个dubbo的filter,利用dubbo的spi
 	
 	 /**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 *
 	 */
 	public abstract class AbstractWriteAheadLogger<T> implements IWriteAheadLogger<T> {
@@ -254,7 +253,7 @@ distributed-transaction-agent 本质上是一个dubbo的filter,利用dubbo的spi
       distributed-transaction-service 负责开启一个事务，将调用链中的分布式服务注册进分布式事务等等
 	 /**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 *
 	 */
 	public interface TransactionManagerService {
@@ -273,7 +272,7 @@ distributed-transaction-agent 本质上是一个dubbo的filter,利用dubbo的spi
 	
 	/**
 	 * 
-	 * @author yubing
+	 * @author SessionBest
 	 *
 	 */
 	public interface DubboWithDistributedTransactionAgentService1 {
