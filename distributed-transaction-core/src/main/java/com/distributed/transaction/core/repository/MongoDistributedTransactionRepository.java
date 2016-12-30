@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import com.distributed.transaction.api.Transaction;
 import com.distributed.transaction.common.util.AssertUtil;
 import com.distributed.transaction.core.mongo.impl.MongoTransactionService;
-import com.distributed.transaction.core.mongo.pojo.TransactionMongoBean;
+import com.distributed.transaction.core.mongo.po.TransactionMongoBean;
 import com.distributed.transaction.core.util.TransactionConvertMongoBeanHelper;
 
 /**

@@ -9,7 +9,7 @@ import com.distributed.transaction.common.util.AssertUtil;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public class TransactionInvocation implements Invocation,Serializable{

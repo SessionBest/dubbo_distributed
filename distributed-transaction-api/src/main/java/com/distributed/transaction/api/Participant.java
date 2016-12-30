@@ -2,11 +2,12 @@ package com.distributed.transaction.api;
 
 import java.io.Serializable;
 
+import com.distributed.transaction.api.enums.ParticipantState;
 import com.distributed.transaction.common.util.UUIDUtil;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public class Participant implements Serializable{

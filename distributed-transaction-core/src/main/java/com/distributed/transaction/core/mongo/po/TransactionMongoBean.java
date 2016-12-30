@@ -1,4 +1,4 @@
-package com.distributed.transaction.core.mongo.pojo;
+package com.distributed.transaction.core.mongo.po;
 
 import java.util.Arrays;
 

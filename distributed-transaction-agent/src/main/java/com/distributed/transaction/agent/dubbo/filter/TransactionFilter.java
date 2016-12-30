@@ -2,7 +2,6 @@ package com.distributed.transaction.agent.dubbo.filter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.alibaba.dubbo.common.Constants;
@@ -19,8 +18,6 @@ import com.distributed.transaction.agent.spring.TransactionableDubboServiceCente
 import com.distributed.transaction.api.Participant;
 import com.distributed.transaction.api.Transaction;
 import com.distributed.transaction.api.TransactionInvocation;
-import com.distributed.transaction.api.exception.TransactionRollBackException;
-import com.distributed.transaction.api.service.TransactionManagerService;
 import com.distributed.transaction.common.CommonResponse;
 import com.distributed.transaction.common.constants.DistributeTransactionConstants;
 import com.distributed.transaction.common.util.StringUtil;
@@ -28,10 +25,12 @@ import com.distributed.transaction.common.util.StringUtil;
 
 /**
  * 
- * @author yubing
+ * @author SesssionBest
+ * dubbo filter
  *
  */
 
+@SuppressWarnings("resource")
 @Activate(group = { Constants.PROVIDER, Constants.CONSUMER })
 public class TransactionFilter implements Filter {
 
@@ -46,12 +45,12 @@ public class TransactionFilter implements Filter {
 	
 	
 	
+	@SuppressWarnings("rawtypes")
 	@Override
 	public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
 		
 		String serviceName = invoker.getInterface().getName();
 		Class serviceType = invoker.getInterface();
-//		String serviceName = invoker.getInterface().getName();
 		String transactionableRollbackMethod = "";
 		Participant participant = null ;
 	
@@ -59,7 +58,7 @@ public class TransactionFilter implements Filter {
 			String methodName = invocation.getMethodName();
 			Class[] parameterTypes = invocation.getParameterTypes();
 			Object[] argumentValues = invocation.getArguments();
-		//	logger.info("{}&*{}",serviceName,methodName);
+			logger.info("{}&*{}",serviceName,methodName);
 			
 			transactionableRollbackMethod = transactionableDubboServiceCenter.getRollBackMethodOftransactionableAnnotationOnMethod(serviceType, methodName, parameterTypes);
 			
@@ -134,6 +133,7 @@ public class TransactionFilter implements Filter {
 		}
 	}
 
+	@SuppressWarnings("rawtypes")
 	private boolean isTriggerTransactionRollback(Result result){
 		CommonResponse commonResponse = (CommonResponse)result.getValue();
 	    if (result.getException() != null  || (commonResponse != null && commonResponse.getCode() != DistributeTransactionConstants.DUBBO_SERVICE_RETURN_SUCCESS  ) ) {

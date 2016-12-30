@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
-import com.distributed.transaction.core.mongo.pojo.TransactionWriteAheadLogMongoBean;
+import com.distributed.transaction.core.mongo.po.TransactionWriteAheadLogMongoBean;
 import com.distributed.transaction.core.mongo.repository.TransactionWriteAheadLogMongoBeanRepository;
 
 

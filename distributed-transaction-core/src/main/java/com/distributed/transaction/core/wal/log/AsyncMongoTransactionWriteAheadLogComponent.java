@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import com.distributed.transaction.api.Participant;
 import com.distributed.transaction.api.TransactionInvocation;
 import com.distributed.transaction.api.TransactionWriteAheadLog;
-import com.distributed.transaction.api.TransactionWriteAheadLogType;
+import com.distributed.transaction.api.enums.TransactionWriteAheadLogType;
 import com.distributed.transaction.common.threadpool.CustomAsyncThreadPool;
 import com.distributed.transaction.common.util.AssertUtil;
 

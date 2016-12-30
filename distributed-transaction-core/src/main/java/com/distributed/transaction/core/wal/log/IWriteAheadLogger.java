@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public interface IWriteAheadLogger<T> {

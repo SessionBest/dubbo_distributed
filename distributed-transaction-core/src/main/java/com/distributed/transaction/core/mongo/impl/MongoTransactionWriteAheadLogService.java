@@ -2,7 +2,7 @@ package com.distributed.transaction.core.mongo.impl;
 
 import java.util.List;
 
-import com.distributed.transaction.core.mongo.pojo.TransactionWriteAheadLogMongoBean;
+import com.distributed.transaction.core.mongo.po.TransactionWriteAheadLogMongoBean;
 
 
 /**

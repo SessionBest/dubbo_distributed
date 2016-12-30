@@ -2,6 +2,8 @@ package com.distributed.transaction.api;
 
 import java.io.Serializable;
 
+import com.distributed.transaction.api.enums.TransactionWriteAheadLogType;
+
 
 /**
  * 

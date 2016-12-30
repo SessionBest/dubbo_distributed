@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public interface Invocation {

@@ -9,7 +9,7 @@ import com.alibaba.dubbo.config.ReferenceConfig;
 import com.alibaba.dubbo.rpc.Result;
 import com.distributed.transaction.api.Participant;
 import com.distributed.transaction.api.TransactionInvocation;
-import com.distributed.transaction.api.Transactionable;
+import com.distributed.transaction.api.di.Transactionable;
 import com.distributed.transaction.common.CommonResponse;
 import com.distributed.transaction.common.constants.DistributeTransactionConstants;
 import com.distributed.transaction.common.util.AssertUtil;

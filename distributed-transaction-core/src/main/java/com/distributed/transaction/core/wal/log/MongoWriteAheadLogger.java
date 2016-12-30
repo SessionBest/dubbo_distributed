@@ -9,10 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.distributed.transaction.api.TransactionWriteAheadLog;
-import com.distributed.transaction.api.TransactionWriteAheadLogType;
+import com.distributed.transaction.api.enums.TransactionWriteAheadLogType;
 import com.distributed.transaction.common.util.AssertUtil;
 import com.distributed.transaction.core.mongo.impl.MongoTransactionWriteAheadLogService;
-import com.distributed.transaction.core.mongo.pojo.TransactionWriteAheadLogMongoBean;
+import com.distributed.transaction.core.mongo.po.TransactionWriteAheadLogMongoBean;
 import com.distributed.transaction.core.util.TransactionWriteAheadLogConvertMongoBeanHelper;
 
 

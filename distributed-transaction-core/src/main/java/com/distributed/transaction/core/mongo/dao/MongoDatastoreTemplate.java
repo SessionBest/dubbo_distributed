@@ -9,7 +9,7 @@ import com.mongodb.Mongo;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public class MongoDatastoreTemplate{

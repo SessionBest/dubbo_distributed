@@ -8,8 +8,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
-import com.distributed.transaction.api.TransactionState;
-import com.distributed.transaction.core.mongo.pojo.TransactionMongoBean;
+import com.distributed.transaction.api.enums.TransactionState;
+import com.distributed.transaction.core.mongo.po.TransactionMongoBean;
 import com.distributed.transaction.core.mongo.repository.TransactionMongoBeanRepository;
 
 /**

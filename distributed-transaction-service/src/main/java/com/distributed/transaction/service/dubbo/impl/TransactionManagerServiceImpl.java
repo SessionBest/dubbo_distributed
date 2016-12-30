@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.distributed.transaction.api.Participant;
-import com.distributed.transaction.api.ParticipantState;
 import com.distributed.transaction.api.Transaction;
-import com.distributed.transaction.api.TransactionState;
-import com.distributed.transaction.api.TransactionWriteAheadLogType;
+import com.distributed.transaction.api.enums.ParticipantState;
+import com.distributed.transaction.api.enums.TransactionState;
+import com.distributed.transaction.api.enums.TransactionWriteAheadLogType;
 import com.distributed.transaction.api.service.TransactionManagerService;
 import com.distributed.transaction.common.util.AssertUtil;
 import com.distributed.transaction.core.repository.DistributedTransactionRepository;

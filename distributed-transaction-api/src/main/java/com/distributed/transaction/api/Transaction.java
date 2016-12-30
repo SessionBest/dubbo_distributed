@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.distributed.transaction.api.enums.TransactionState;
 import com.distributed.transaction.common.constants.DistributeTransactionConstants;
 import com.distributed.transaction.common.util.AssertUtil;
 import com.distributed.transaction.common.util.UUIDUtil;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public class Transaction implements Serializable {

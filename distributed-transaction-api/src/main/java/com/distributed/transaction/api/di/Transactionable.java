@@ -1,4 +1,4 @@
-package com.distributed.transaction.api;
+package com.distributed.transaction.api.di;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 

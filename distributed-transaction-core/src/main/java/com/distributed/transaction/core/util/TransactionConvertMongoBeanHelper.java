@@ -3,7 +3,7 @@ package com.distributed.transaction.core.util;
 import com.distributed.transaction.api.Transaction;
 import com.distributed.transaction.common.util.AssertUtil;
 import com.distributed.transaction.common.util.SerializeUtil;
-import com.distributed.transaction.core.mongo.pojo.TransactionMongoBean;
+import com.distributed.transaction.core.mongo.po.TransactionMongoBean;
 
 /**
  * 

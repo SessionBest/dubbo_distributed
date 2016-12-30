@@ -2,21 +2,19 @@ package com.distributed.transaction.agent.spring;
 
 import java.lang.reflect.Method;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-
-import com.distributed.transaction.api.Transactionable;
+import com.distributed.transaction.api.di.Transactionable;
 import com.distributed.transaction.common.util.AssertUtil;
 
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public class TransactionableDubboServiceCenter implements ApplicationContextAware {

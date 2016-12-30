@@ -2,7 +2,7 @@ package com.distributed.transaction.core.message;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  * 
  * 
  *todo add a distributed event system,

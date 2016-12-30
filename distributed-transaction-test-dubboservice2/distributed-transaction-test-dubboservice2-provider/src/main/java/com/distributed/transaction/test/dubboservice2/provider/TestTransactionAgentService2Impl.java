@@ -3,7 +3,7 @@ package com.distributed.transaction.test.dubboservice2.provider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.distributed.transaction.api.Transactionable;
+import com.distributed.transaction.api.di.Transactionable;
 import com.distributed.transaction.common.CommonResponse;
 import com.distributed.transaction.test.dubboservice1.api.DubboWithDistributedTransactionAgentService1;
 import com.distributed.transaction.test.dubboservice2.api.DubboWithDistributedTransactionAgentService2;

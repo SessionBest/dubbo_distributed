@@ -6,7 +6,7 @@ import com.distributed.transaction.common.Duplicatedable;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public  class ParticipantId implements Duplicatedable<ParticipantId>,Serializable {

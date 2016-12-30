@@ -7,7 +7,7 @@ import com.distributed.transaction.common.Duplicatedable;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public  class TransactionGlobalId implements Duplicatedable<TransactionGlobalId>,Serializable {

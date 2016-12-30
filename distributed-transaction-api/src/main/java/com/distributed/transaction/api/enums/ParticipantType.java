@@ -1,8 +1,8 @@
-package com.distributed.transaction.api;
+package com.distributed.transaction.api.enums;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public enum ParticipantType {

@@ -12,7 +12,7 @@ import com.distributed.transaction.common.util.AssertUtil;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 

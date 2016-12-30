@@ -11,7 +11,7 @@ import com.distributed.transaction.core.mongo.dao.MongoDatastoreTemplate;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public abstract class AbstractMongoService<T> {

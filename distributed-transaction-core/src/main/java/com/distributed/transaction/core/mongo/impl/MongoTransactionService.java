@@ -3,7 +3,7 @@ package com.distributed.transaction.core.mongo.impl;
 
 import java.util.List;
 
-import com.distributed.transaction.core.mongo.pojo.TransactionMongoBean;
+import com.distributed.transaction.core.mongo.po.TransactionMongoBean;
 
 
 /**
