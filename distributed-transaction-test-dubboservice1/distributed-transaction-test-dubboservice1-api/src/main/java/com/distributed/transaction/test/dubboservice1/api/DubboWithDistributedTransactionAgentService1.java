@@ -5,7 +5,7 @@ import com.distributed.transaction.common.CommonResponse;
 
 /**
  * 
- * @author yubing
+ * @author SessionBest
  *
  */
 public interface DubboWithDistributedTransactionAgentService1 {
